@@ -4,6 +4,9 @@ DANE TESTOWE zawierające tylko trzy rekordy. W rzeczywistości jest ich ponad 6
 Skrypt import.rb importuje do bazy couchdb porcję danych z JSONa za pomocą gema json i couchrest.
 Moim źródłem danych jest plik w formacje JSON zawierający dane o bliskichspotkaniach trzeciego stopnia.
 
+Poprawnie zapisujący skrypt dokument po dokumencie uruchamia się poleceniem ruby import2.rb ufo.json.
+
+Dane pobrane z :
 http://www.infochimps.com/datasets/d60000-documented-ufo-sightings-with-text-descriptions-and-metad
 
 Plik jest błędnie sformatowany - do poprawnego działania wymagana jest jego odpowiednia konwersja. Do tego celu służyć ma test.rb uruchamiany poleceniem ruby test.rb [ŚCIEŻKA DO PLIKU/PLIK.json]. 
