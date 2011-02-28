@@ -7,11 +7,11 @@ require 'rexml/document'
 
 #baza = CouchRest.database!('http://sigma.ug.edu.pl:14015/test')
 baza = CouchRest.database!('http://127.0.0.1:5984/test01')
-#begin
+begin
 	json = JSON.parse(File.open(ARGV[0]).read)
-#rescue
+rescue
 	puts "padlo"
-#end
+end
 	
 
 	
