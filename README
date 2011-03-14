@@ -2,14 +2,11 @@ Na samym starcie zaznaczę, że napotkałem problemy - całość opisana poniże
 DANE TESTOWE zawierające tylko trzy rekordy. W rzeczywistości jest ich ponad 60000.
 
 Skrypt import.rb importuje do bazy couchdb porcję danych z JSONa za pomocą gema json i couchrest.
-Moim źródłem danych jest plik w formacje JSON zawierający dane o bliskichspotkaniach trzeciego stopnia.
+Moim źródłem danych jest plik w formacje JSON zawierający dane o bliskichspotkaniach trzeciego stopnia. Nie działa on poprawnie z uwagi na to jak sformatowany jest plik ;) Do importu danych z tak sformatowanego pliku używamy skryptu import2.rb.
 
 Poprawnie zapisujący skrypt dokument po dokumencie uruchamia się poleceniem ruby import2.rb ufo.json.
 
 Dane pobrane z :
 http://www.infochimps.com/datasets/d60000-documented-ufo-sightings-with-text-descriptions-and-metad
-
-Plik jest błędnie sformatowany - do poprawnego działania wymagana jest jego odpowiednia konwersja. Do tego celu służyć ma test.rb uruchamiany poleceniem ruby test.rb [ŚCIEŻKA DO PLIKU/PLIK.json]. 
-Jak widać całość nie działa poprawnie - nie doszedłem jeszcze dlaczego. 
 
 Mając poprawnie sformatowany plik (ufo_proper.json) import poprzez import.rb działa bez zarzutu. Ciekawostka, chyba, że jak zawsze coś przeoczyłem ;)
