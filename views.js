@@ -22,3 +22,6 @@ ddoc.views.mapaGoogli =
     return null;
   }
 }
+
+//couchapp push ls_views.js http://localhost:5984/gutenberg
+
